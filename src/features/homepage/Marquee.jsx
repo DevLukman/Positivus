@@ -20,7 +20,7 @@ const marqueeImages = [
 
 function Marquee() {
   return (
-    <section className="app-container relative mt-14 w-full pb-8">
+    <section className="app-container relative mt-14 w-full overflow-hidden pb-8">
       <motion.div
         className="relative flex space-x-10 whitespace-nowrap"
         animate={{ x: ["0%", "-100%"] }}
