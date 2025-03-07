@@ -40,7 +40,7 @@ function GridUiLg() {
     <>
       <GridTransform>
         <div className="h-[310px] cursor-pointer rounded-[40px] border border-b-[5px] border-[#000] bg-[#f3f3f3] pb-[30px]">
-          <div className="mx-auto mt-8 flex max-w-[570px] justify-between px-2 py-2">
+          <div className="mx-auto mt-8 flex max-w-[550px] justify-between px-2 py-2">
             <div>
               <h3 className="max-w-[225px] rounded-[7px] bg-[#b9ff66] px-2 py-1 text-3xl font-medium">
                 Search engine
@@ -57,7 +57,7 @@ function GridUiLg() {
               />
             </div>
           </div>
-          <div className="mx-auto flex max-w-[500px] items-center gap-4 px-2">
+          <div className="mx-auto flex max-w-[550px] items-center gap-4 px-2">
             <p className="rounded-full bg-[#000] px-2 py-2 text-lg text-[#b9ff66]">
               <GoArrowUpRight />
             </p>
@@ -67,7 +67,7 @@ function GridUiLg() {
       </GridTransform>
       <GridTransform>
         <div className="h-[310px] cursor-pointer rounded-[40px] border border-b-[5px] border-[#000] bg-[#b9ff66] pb-[30px]">
-          <div className="mx-auto mt-8 flex max-w-[500px] justify-between py-2">
+          <div className="mx-auto mt-8 flex max-w-[550px] justify-between px-2 py-2">
             <div>
               <h3 className="max-w-[225px] rounded-[7px] bg-[#fff] px-2 py-1 text-3xl font-medium">
                 Pay-per-click
@@ -84,7 +84,7 @@ function GridUiLg() {
               />
             </div>
           </div>
-          <div className="mx-auto flex max-w-[500px] items-center gap-4">
+          <div className="mx-auto flex max-w-[550px] items-center gap-4 px-4">
             <p className="rounded-full bg-[#000] px-2 py-2 text-lg text-[#b9ff66]">
               <GoArrowUpRight />
             </p>
@@ -94,7 +94,7 @@ function GridUiLg() {
       </GridTransform>
       <GridTransform>
         <div className="h-[310px] cursor-pointer rounded-[40px] border border-b-[5px] border-[#000] bg-[#191a23] pb-[30px]">
-          <div className="mx-auto mt-8 flex max-w-[500px] justify-between py-2">
+          <div className="mx-auto mt-8 flex max-w-[550px] justify-between px-2 py-2">
             <div>
               <h3 className="max-w-[225px] rounded-[7px] bg-[#fff] px-2 py-1 text-3xl font-medium">
                 Social Media
@@ -111,7 +111,7 @@ function GridUiLg() {
               />
             </div>
           </div>
-          <div className="mx-auto flex max-w-[500px] items-center gap-4">
+          <div className="mx-auto flex max-w-[550px] items-center gap-4 px-4">
             <p className="rounded-full bg-[#fff] px-2 py-2 text-lg text-[#000]">
               <GoArrowUpRight />
             </p>
@@ -121,7 +121,7 @@ function GridUiLg() {
       </GridTransform>
       <GridTransform>
         <div className="h-[310px] cursor-pointer rounded-[40px] border border-b-[5px] border-[#000] bg-[#f3f3f3] pb-[30px]">
-          <div className="mx-auto mt-8 flex max-w-[500px] justify-between py-2">
+          <div className="mx-auto mt-8 flex max-w-[550px] justify-between px-2 py-2">
             <div>
               <h3 className="max-w-[225px] rounded-[7px] bg-[#b9ff66] px-2 py-1 text-3xl font-medium">
                 Email
@@ -138,7 +138,7 @@ function GridUiLg() {
               />
             </div>
           </div>
-          <div className="mx-auto flex max-w-[500px] items-center gap-4">
+          <div className="mx-auto flex max-w-[550px] items-center gap-4 px-4">
             <p className="rounded-full bg-[#000] px-2 py-2 text-lg text-[#b9ff66]">
               <GoArrowUpRight />
             </p>
@@ -148,7 +148,7 @@ function GridUiLg() {
       </GridTransform>
       <GridTransform>
         <div className="h-[310px] cursor-pointer rounded-[40px] border border-b-[5px] border-[#000] bg-[#b9ff66] pb-[30px]">
-          <div className="mx-auto mt-8 flex max-w-[500px] justify-between py-2">
+          <div className="mx-auto mt-8 flex max-w-[550px] justify-between px-2 py-2">
             <div>
               <h3 className="max-w-[225px] rounded-[7px] bg-[#fff] px-2 py-1 text-3xl font-medium">
                 Content
@@ -165,7 +165,7 @@ function GridUiLg() {
               />
             </div>
           </div>
-          <div className="mx-auto flex max-w-[500px] items-center gap-4">
+          <div className="mx-auto flex max-w-[550px] items-center gap-4 px-4">
             <p className="rounded-full bg-[#000] px-2 py-2 text-lg text-[#b9ff66]">
               <GoArrowUpRight />
             </p>
@@ -175,7 +175,7 @@ function GridUiLg() {
       </GridTransform>
       <GridTransform>
         <div className="h-[310px] cursor-pointer rounded-[40px] border border-b-[5px] border-[#000] bg-[#191a23] pb-[30px]">
-          <div className="mx-auto mt-8 flex max-w-[500px] justify-between py-2">
+          <div className="mx-auto mt-8 flex max-w-[550px] justify-between px-2 py-2">
             <div>
               <h3 className="max-w-[225px] rounded-[7px] bg-[#b9ff66] px-2 py-1 text-3xl font-medium">
                 Analytics and
@@ -192,7 +192,7 @@ function GridUiLg() {
               />
             </div>
           </div>
-          <div className="mx-auto flex max-w-[500px] items-center gap-4">
+          <div className="mx-auto flex max-w-[550px] items-center gap-4 px-4">
             <p className="rounded-full bg-[#fff] px-2 py-2 text-lg text-[#000]">
               <GoArrowUpRight />
             </p>

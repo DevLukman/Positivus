@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 function HeroSection() {
   return (
     <section className="mt-[20px] w-screen lg:mt-[40px]">
