@@ -5,4 +5,17 @@
 // git branch -M main
 // git remote add origin https://github.com/DevLukman/Positivus.git
 // git push -u origin main
-// import { GoArrowUpRight } from "react-icons/go";
+
+import GridUiLg from "./GridUiLg";
+
+function GridUi() {
+  return (
+    <>
+      <section className="app-container mt-20 hidden grid-cols-2 gap-8 lg:grid">
+        <GridUiLg />
+      </section>
+    </>
+  );
+}
+
+export default GridUi;

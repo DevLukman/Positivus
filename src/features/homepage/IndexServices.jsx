@@ -1,3 +1,5 @@
+import GridUi from "./GridUi";
+
 function IndexServices() {
   return (
     <section className="mt-8 pb-10 lg:mt-14">
@@ -10,7 +12,7 @@ function IndexServices() {
           businesses grow and succeed online. These services include:
         </p>
       </header>
-      <div className="app-container mt-20 grid h-[100dvh] grid-cols-1 gap-8 lg:grid-cols-2"></div>
+      <GridUi />
     </section>
   );
 }
