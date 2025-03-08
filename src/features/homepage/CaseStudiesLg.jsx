@@ -22,7 +22,7 @@ import "swiper/css";
 function CaseStudiesLg() {
   return (
     <>
-      <div className="mt-14 flex items-center justify-between rounded-[30px] bg-[#191a1b] px-10 py-14">
+      <div className="mt-14 hidden items-center justify-between rounded-[30px] bg-[#191a1b] px-10 py-14 lg:flex">
         {slideContent.map((item, index) => (
           <div
             key={item.id}

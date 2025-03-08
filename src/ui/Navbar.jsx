@@ -5,7 +5,6 @@ import Logo from "./Logo";
 import { FaXmark } from "react-icons/fa6";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-// bg-[#b9ff66]
 const links = [
   { name: "About Us", to: "/about" },
   { name: "Services", to: "/services" },
