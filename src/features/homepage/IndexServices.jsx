@@ -14,7 +14,7 @@ function IndexServices() {
       </header>
       <GridUi />
       <section className="app-container mt-[60px] lg:mt-[100px]">
-        <div className="flex h-[347px] justify-between rounded-[30px] bg-[#f3f3f3] px-10">
+        <div className="flex justify-between rounded-[30px] bg-[#f3f3f3] px-10 pb-6">
           <div className="mt-8 lg:mt-12">
             <h3 className="text-2xl font-medium lg:text-3xl">
               Let&apos;s make things happen
@@ -24,8 +24,11 @@ function IndexServices() {
               services can help your business grow and succeed online.
             </p>
 
-            <button className="mt-6 w-full rounded-md bg-[#191A23] px-6 py-2 text-center font-normal text-white outline-none transition duration-300 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8 lg:text-xl">
+            <button className="mt-6 hidden w-full rounded-md bg-[#191A23] px-6 py-2 text-center font-normal text-white outline-none transition duration-300 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8 lg:block lg:text-xl">
               Get your free proposal
+            </button>
+            <button className="mt-6 w-full rounded-md bg-[#191A23] px-6 py-2 text-center font-normal text-white outline-none transition duration-300 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8 lg:hidden lg:text-xl">
+              Get your proposal
             </button>
           </div>
           <div>

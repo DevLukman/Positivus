@@ -1,3 +1,4 @@
+import Casestudies from "../features/homepage/Casestudies";
 import HeroSection from "../features/homepage/HeroSection";
 import IndexServices from "../features/homepage/IndexServices";
 import Marquee from "../features/homepage/Marquee";
@@ -10,6 +11,7 @@ function Home() {
       <HeroSection />
       <Marquee />
       <IndexServices />
+      <Casestudies />
     </>
   );
 }
