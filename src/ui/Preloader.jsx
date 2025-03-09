@@ -19,12 +19,22 @@ function Preloader() {
       duration: 1.5,
       stagger: 0.1,
     });
-    tl.to("#container", {
-      height: 0,
+    tl.to("#text", {
+      y: -120,
       ease: "power4.inOut",
-      duration: 1.3,
-      stagger: 0.06,
+      duration: 0.9,
+      stagger: 0.05,
     });
+    tl.to(
+      "#container",
+      {
+        height: 0,
+        ease: "power4.inOut",
+        duration: 1.3,
+        stagger: 0.08,
+      },
+      "-=0.6",
+    );
   });
   return (
     <>

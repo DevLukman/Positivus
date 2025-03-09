@@ -1,3 +1,4 @@
+import Accordion from "../features/homepage/Accordion";
 import Casestudies from "../features/homepage/Casestudies";
 import HeroSection from "../features/homepage/HeroSection";
 import IndexServices from "../features/homepage/IndexServices";
@@ -14,6 +15,7 @@ function Home() {
       <Marquee />
       <IndexServices />
       <Casestudies />
+      <Accordion />
     </>
   );
 }
