@@ -1,11 +1,6 @@
+/* eslint-disable react/prop-types */
 import { useRef, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
-import { motion } from "framer-motion";
-import PropTypes from "prop-types";
-
-GridTransform.propTypes = {
-  children: PropTypes.string.isRequired,
-};
 function GridTransform({ children }) {
   const [transformStyle, setStransformStyle] = useState("");
   const gridRef = useRef();
@@ -24,14 +19,14 @@ function GridTransform({ children }) {
     setStransformStyle("");
   }
   return (
-    <motion.div
+    <div
       style={{ transform: transformStyle }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       ref={gridRef}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }
 
@@ -123,7 +118,7 @@ function GridUiLg() {
         <div className="h-[310px] cursor-pointer rounded-[40px] border border-b-[5px] border-[#000] bg-[#f3f3f3] pb-[30px]">
           <div className="mx-auto mt-8 flex max-w-[550px] justify-between px-2 py-2">
             <div>
-              <h3 className="max-w-[225px] rounded-[7px] bg-[#b9ff66] px-2 py-1 text-3xl font-medium">
+              <h3 className="w-fit rounded-[7px] bg-[#b9ff66] px-2 py-1 text-3xl font-medium">
                 Email
               </h3>
               <h3 className="max-w-[197px] rounded-[7px] bg-[#b9ff66] px-2 py-1 text-3xl font-medium">

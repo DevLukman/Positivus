@@ -30,15 +30,12 @@ const AccordionContent = [
     text: "Our services are not limited to just the initial consultation and implementation. We offer ongoing support and maintenance to ensure that your marketing efforts continue to be effective and aligned with your business goals.",
   },
 ];
-
-import { FaPlus } from "react-icons/fa6";
-import { FaMinus } from "react-icons/fa";
+/* eslint-disable react/prop-types */
+import { FaPlus, FaMinus } from "react-icons/fa6";
 import { useState } from "react";
-import PropTypes from "prop-types";
 
 function AccordionItem() {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="mt-[30px] flex flex-col gap-6 lg:mt-[50px]">
       {AccordionContent.map((content, index) => (
@@ -54,14 +51,6 @@ function AccordionItem() {
     </div>
   );
 }
-
-AccordionContainer.propTypes = {
-  header: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  number: PropTypes.number.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  setIsOpen: PropTypes.func.isRequired,
-};
 function AccordionContainer({ header, text, number, isOpen, setIsOpen }) {
   const curOpen = number === isOpen;
   function handleOpen() {
@@ -93,5 +82,4 @@ function AccordionContainer({ header, text, number, isOpen, setIsOpen }) {
     </div>
   );
 }
-
 export default AccordionItem;

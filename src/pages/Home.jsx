@@ -4,10 +4,11 @@ import HeroSection from "../features/homepage/HeroSection";
 import IndexServices from "../features/homepage/IndexServices";
 import Marquee from "../features/homepage/Marquee";
 import Team from "../features/homepage/Team";
-import Testimonial from "../features/homepage/Testimonial";
+// import Testimonial from "../features/homepage/Testimonial";
 import Navbar from "../ui/Navbar";
 import Preloader from "../ui/Preloader";
-
+import Contact from "../features/homepage/Contact";
+import Footer from "../ui/Footer";
 function Home() {
   return (
     <>
@@ -19,7 +20,9 @@ function Home() {
       <Casestudies />
       <Accordion />
       <Team />
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <Contact />
+      <Footer />
     </>
   );
 }

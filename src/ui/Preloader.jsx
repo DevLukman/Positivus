@@ -40,7 +40,7 @@ function Preloader() {
     <>
       <div
         id="container"
-        className="mask-clip-path fixed inset-0 z-20 h-full w-full bg-[#f3f3f3]"
+        className="mask-clip-path fixed inset-0 z-50 h-full w-full bg-[#f3f3f3]"
       >
         <div className="mask-clip-path absolute left-[50%] top-[50%] flex -translate-x-[50%] -translate-y-[50%] items-center justify-center">
           {PreloaderText.map((chars, index) => (
@@ -56,7 +56,7 @@ function Preloader() {
       </div>
       <div
         id="container"
-        className="mask-clip-path fixed inset-0 z-10 h-full w-full bg-[#b9ff66]"
+        className="mask-clip-path fixed inset-0 z-40 h-full w-full bg-[#b9ff66]"
       ></div>
     </>
   );

@@ -51,11 +51,11 @@ function Team() {
           marketing strategies
         </p>
       </header>
-      <div className="mt-[50px] grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="mt-[50px] grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {teamContent.map((content, index) => (
           <div
             key={index}
-            className="rounded-[30px] border border-b-4 border-[#000] px-8 py-4"
+            className="rounded-[30px] border border-b-[6px] border-[#000] px-8 py-4 transition-all duration-300 hover:scale-105"
           >
             <div className="flex justify-between">
               <div className="flex items-end gap-4">
@@ -79,8 +79,8 @@ function Team() {
           </div>
         ))}
       </div>
-      <div className="mt-8 flex justify-end">
-        <button className="w-full rounded-md bg-[#191A23] px-10 py-2 text-center text-xl font-normal text-white outline-none transition duration-300 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8">
+      <div className="mt-6 flex justify-end">
+        <button className="w-full rounded-md bg-[#191A23] px-10 py-2 text-center text-xl font-normal text-white outline-none transition-all duration-300 hover:scale-105 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8">
           See all team
         </button>
       </div>
