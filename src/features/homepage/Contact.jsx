@@ -9,9 +9,9 @@ function Contact() {
           Connect with Us: Let&apos;s Discuss Your Digital Marketing Needs
         </p>
       </header>
-      <div className="relative mt-[50px] flex w-full items-center justify-between overflow-hidden rounded-[20px] bg-[#f3f3f3] px-6 py-10 pb-14 lg:px-14">
-        <div className="flex flex-col">
-          <div className="flex items-center gap-4">
+      <div className="relative mt-[50px] flex items-center justify-between overflow-hidden rounded-[30px] bg-[#f3f3f3] px-6 py-10 pb-14 lg:rounded-[20px] lg:px-14">
+        <div className="flex w-[100%] flex-col lg:w-[50%]">
+          <div className="flex items-center gap-8">
             <div className="flex gap-2">
               <input type="radio" className="accent-[#b9ff66]" />
               <label className="text-lg font-normal">Say Hi</label>
@@ -21,7 +21,7 @@ function Contact() {
               <label className="text-lg font-normal">Get a Quote</label>
             </div>
           </div>
-          <div className="mt-[20px] flex w-full flex-col gap-4">
+          <div className="mt-[20px] flex flex-col gap-4">
             <div className="flex flex-col gap-1">
               <label htmlFor="name" className="text-base font-normal">
                 Name
@@ -30,7 +30,7 @@ function Contact() {
                 type="text"
                 id="name"
                 placeholder="Name"
-                className="w-[320px] rounded-[10px] border border-[#000] px-8 py-3 lg:w-[500px]"
+                className="max-w-[400px] rounded-[10px] border border-[#000] px-8 py-3"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -41,7 +41,7 @@ function Contact() {
                 type="text"
                 id="email"
                 placeholder="Email"
-                className="w-[320px] rounded-[10px] border border-[#000] px-8 py-3 lg:w-[500px]"
+                className="max-w-[400px] rounded-[10px] border border-[#000] px-8 py-3"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -51,11 +51,11 @@ function Contact() {
               <textarea
                 id="message"
                 placeholder="Message"
-                className="w-[320px] rounded-[10px] border border-[#000] px-8 py-3 lg:w-[500px]"
+                className="max-w-[400px] rounded-[10px] border border-[#000] px-8 py-3"
               ></textarea>
             </div>
           </div>
-          <button className="mt-[40px] w-full rounded-md bg-[#191A23] px-6 py-3 text-center text-xl font-normal text-white outline-none transition duration-300 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8 lg:w-[500px]">
+          <button className="mt-[40px] rounded-md bg-[#191A23] px-6 py-3 text-center text-xl font-normal text-white outline-none transition duration-300 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8">
             Send Message
           </button>
         </div>

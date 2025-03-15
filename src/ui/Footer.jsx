@@ -4,12 +4,12 @@ import FooterNav from "./FooterNav";
 function Footer() {
   return (
     <footer className="lg:app-container mt-[50px]">
-      <div className="bg-[#191a23] px-10 pb-20 lg:rounded-[15px]">
+      <div className="bg-[#191a23] px-10 pb-6 lg:rounded-[15px]">
         <FooterNav />
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <div>
             <div className="flex items-center justify-center lg:items-start lg:justify-start">
-              <h1 className="w-fit rounded-md bg-[#B9FF66] px-2 py-1 text-base font-normal text-black">
+              <h1 className="w-fit rounded-md bg-[#B9FF66] px-2 py-1 text-base font-normal text-[#000]">
                 Contact Us:
               </h1>
             </div>
@@ -47,10 +47,10 @@ function Footer() {
           </p>
         </div>
         <div className="mt-[30px] flex flex-col items-center gap-2 border-t border-t-[#f3f3f3] lg:flex-row">
-          <p className="mt-[30px] font-normal text-[#fff]">
+          <p className="mt-[30px] text-xs font-normal text-[#fff] lg:text-base">
             &copy; 2023 Positivus. All Rights Reserved.
           </p>
-          <p className="mt-[15px] font-normal text-[#fff] lg:mt-[30px]">
+          <p className="mt-[5px] text-xs font-normal text-[#fff] lg:mt-[30px] lg:text-base">
             Privacy Policy
           </p>
         </div>

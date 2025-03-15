@@ -1,51 +1,46 @@
-// import { useEffect, useRef } from "react";
-// import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { splitTextIntoChars } from "../utils/helper";
+import { useRef } from "react";
+import gsap from "gsap";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
-// // Helper function to split text into characters
-// const splitTextIntoChars = (element) => {
-//   if (!element) return [];
-//   const text = element.textContent;
-//   element.innerHTML = ""; // Clear existing text
+function AboutUs() {
+  const textRef = useRef(null);
+  useGSAP(function () {
+    if (!textRef.current) return;
+    const chars = splitTextIntoChars(textRef.current);
+    gsap.from(chars, {
+      y: 150,
+      ease: "power4.inOut",
+      duration: 1,
+      stagger: 0.05,
+    });
+  }, []);
+  return (
+    <div className="flex h-screen w-full flex-col items-center justify-center overflow-hidden">
+      <h1
+        className="mask-clip-path text-[8vw] font-extrabold uppercase md:text-[7vw] lg:text-[6vw]"
+        ref={textRef}
+      >
+        Coming-Soon
+      </h1>
 
-//   const chars = text.split("").map((char, index) => {
-//     const span = document.createElement("span");
-//     span.textContent = char;
-//     span.style.display = "inline-block"; // Ensure GSAP animations work correctly
-//     element.appendChild(span);
-//     return span;
-//   });
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: "backInOut", duration: 1 }}
+        className="mt-[30px]"
+      >
+        <Link
+          to="/"
+          className="rounded-md border-[2px] bg-[#b9ff66] p-3 font-normal uppercase"
+        >
+          Go Back Home
+        </Link>
+      </motion.div>
+    </div>
+  );
+}
 
-//   return chars;
-// };
-
-// const SplitTextAnimation = () => {
-//   const textRef = useRef(null);
-
-//   useEffect(() => {
-//     if (!textRef.current) return;
-
-//     // Split text into individual character spans
-//     const chars = splitTextIntoChars(textRef.current);
-
-//     // Animate characters with GSAP
-//     gsap.from(chars, {
-//       y: 400,
-//       opacity: 0,
-//       stagger: 0.05,
-//       duration: 1,
-//       ease: "power3.out",
-//     });
-//   }, []);
-
-//   return (
-//     <div className="flex h-screen w-screen items-center justify-center overflow-hidden">
-//       <div className="mask-clip-path">
-//         <h1 ref={textRef} className="text-8xl font-bold uppercase">
-//           Coming-soon
-//         </h1>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default SplitTextAnimation;
+export default AboutUs;
