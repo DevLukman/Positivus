@@ -18,8 +18,6 @@
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.5",
     "react-use": "^17.6.0",
-    "split-type": "^0.3.4",
-    "splitbun": "^1.0.14",
     "swiper": "^11.2.5"
   },
   "devDependencies": {

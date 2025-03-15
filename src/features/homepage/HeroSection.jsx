@@ -3,7 +3,7 @@ function HeroSection() {
     <section className="mt-[20px] w-screen lg:mt-[40px]">
       <div className="app-container flex w-screen flex-col justify-between gap-10 md:flex-row">
         <div className="flex w-full flex-col sm:items-center sm:justify-center lg:items-start lg:justify-start">
-          <div>
+          <div className="overflow-hidden">
             <h1 className="max-w-[560px] text-[2.3rem] font-medium leading-[40px] text-[#000] md:text-[3.3rem] md:leading-[70px] lg:text-[3.75rem]">
               Navigating the digital landscape for success
             </h1>
