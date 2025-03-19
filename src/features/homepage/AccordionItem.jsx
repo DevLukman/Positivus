@@ -66,9 +66,9 @@ function AccordionContainer({ header, text, number, isOpen, setIsOpen }) {
           <span className="text-2xl font-medium text-[#000] lg:text-5xl">
             {number < 10 ? `0${number + 1}` : number + 1}
           </span>
-          <h3 className="max-w-[200px] font-medium lg:max-w-full lg:text-3xl">
+          <h2 className="max-w-[200px] font-medium lg:max-w-full lg:text-3xl">
             {header}
-          </h3>
+          </h2>
         </div>
         <div className="rounded-full border border-[#000] bg-[#f3f3f3] p-2">
           {curOpen ? <FaMinus role="button" /> : <FaPlus />}

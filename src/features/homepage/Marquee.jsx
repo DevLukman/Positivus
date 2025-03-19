@@ -1,21 +1,21 @@
 import { motion } from "framer-motion";
 
 const marqueeImages = [
-  "/images/marquee-1.png",
-  "/images/marquee-2.png",
-  "/images/marquee-3.png",
-  "/images/marquee-4.png",
-  "/images/marquee-5.png",
-  "/images/marquee-6.png",
-  "/images/marquee-1.png",
-  "/images/marquee-3.png",
-  "/images/marquee-4.png",
-  "/images/marquee-6.png",
-  "/images/marquee-1.png",
-  "/images/marquee-5.png",
-  "/images/marquee-3.png",
-  "/images/marquee-2.png",
-  "/images/marquee-4.png",
+  "/images/Amazon.svg",
+  "/images/Dribble.svg",
+  "/images/Hubspot.svg",
+  "/images/Notion.svg",
+  "/images/Netflix.svg",
+  "/images/Zoom.svg",
+  "/images/Amazon.svg",
+  "/images/Dribble.svg",
+  "/images/Hubspot.svg",
+  "/images/Notion.svg",
+  "/images/Netflix.svg",
+  "/images/Notion.svg",
+  "/images/Netflix.svg",
+  "/images/Zoom.svg",
+  "/images/Amazon.svg",
 ];
 
 function Marquee() {
@@ -32,6 +32,8 @@ function Marquee() {
             key={index}
             alt={`index-${index}`}
             className="grayscale"
+            width="100%"
+            height="100%"
           />
         ))}
       </motion.div>
@@ -46,6 +48,8 @@ function Marquee() {
             key={index}
             alt={`index-${index}`}
             className="grayscale"
+            width="100%"
+            height="100%"
           />
         ))}
       </motion.div>

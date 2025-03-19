@@ -9,6 +9,7 @@ import Navbar from "../ui/Navbar";
 import Preloader from "../ui/Preloader";
 import Contact from "../features/homepage/Contact";
 import Footer from "../ui/Footer";
+import MakeThingsHappen from "../features/homepage/MakeThingsHappen";
 function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ function Home() {
       <HeroSection />
       <Marquee />
       <IndexServices />
+      <MakeThingsHappen />
       <Casestudies />
       <Accordion />
       <Team />

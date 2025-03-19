@@ -2,37 +2,37 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 const teamContent = [
   {
-    image: "/images/team-1.png",
+    image: "/images/team-1.svg",
     name: "John Smith",
     title: "CE0 and founder",
     note: "10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy",
   },
   {
-    image: "/images/team-2.png",
+    image: "/images/team-2.svg",
     name: "Jane Doe",
     title: "Director of Operations",
     note: "7+ years of experience in project management and team leadership. Strong organizational and communication skills",
   },
   {
-    image: "/images/team-3.png",
+    image: "/images/team-3.svg",
     name: "Micheal Brown",
     title: "Senior SEO Specialist",
     note: "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization",
   },
   {
-    image: "/images/team-4.png",
+    image: "/images/team-4.svg",
     name: "Emily Johnson",
     title: "PPC Manager",
     note: "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
   },
   {
-    image: "/images/team-5.png",
+    image: "/images/team-5.svg",
     name: "Brain Williams",
     title: "Social Media specialist",
     note: "4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement",
   },
   {
-    image: "/images/team-6.png",
+    image: "/images/team-6.svg",
     name: "Sarah Kim",
     title: "Content Creator",
     note: "2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries",
@@ -63,6 +63,8 @@ function Team() {
                   src={content.image}
                   alt={content.name}
                   className="w-[20%]"
+                  width="100%"
+                  height="100%"
                 />
                 <div>
                   <p className="font-medium">{content.name}</p>

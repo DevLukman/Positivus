@@ -10,7 +10,7 @@ function Contact() {
         </p>
       </header>
       <div className="relative mt-[50px] flex items-center justify-between overflow-hidden rounded-[30px] bg-[#f3f3f3] px-6 py-10 pb-14 lg:rounded-[20px] lg:px-14">
-        <div className="flex w-[100%] flex-col lg:w-[50%]">
+        <form className="flex w-[100%] flex-col lg:w-[50%]">
           <div className="flex items-center gap-8">
             <div className="flex gap-2">
               <input type="radio" className="accent-[#b9ff66]" />
@@ -58,21 +58,21 @@ function Contact() {
           <button className="mt-[40px] rounded-md bg-[#191A23] px-6 py-3 text-center text-xl font-normal text-white outline-none transition duration-300 hover:bg-[#b9ff66] hover:text-[#191a23] md:w-max lg:mt-8">
             Send Message
           </button>
-        </div>
+        </form>
         <div className="z-20 hidden flex-col gap-4 lg:flex">
           <img
-            src="/images/vector-2.png"
+            src="/images/contact-1.svg"
             alt="big star vector"
             className="max-w-[70%]"
           />
           <img
-            src="/images/vector-1.png"
+            src="/images/contact-2.svg"
             alt="small star vector"
             className="max-w-[40%]"
           />
         </div>
         <img
-          src="images/Mask group.png"
+          src="images/contact-3.svg"
           alt="Mask group"
           className="absolute right-[-20%] top-[10%] hidden h-[500px] lg:block"
         />

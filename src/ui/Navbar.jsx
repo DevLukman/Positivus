@@ -46,18 +46,20 @@ function Navbar() {
       <nav className="relative mt-4 hidden w-full py-2 lg:block">
         <div className="app-container flex items-center justify-between">
           <Logo />
-          <ul className="relative flex items-center gap-8 text-xl">
-            {links.map((link, index) => (
-              <li key={index}>
-                <NavLink to={link.to} className="nav-hover-btn block">
-                  {link.name}
-                </NavLink>
-              </li>
-            ))}
-            <button className="rounded-md border border-[#191a23] px-4 py-2 transition duration-300 hover:border-[#b9ff66] hover:bg-[#b9ff66] hover:text-white">
+          <div className="item-center relative flex gap-8">
+            <ul className="relative flex items-center gap-8 text-xl">
+              {links.map((link, index) => (
+                <li key={index}>
+                  <NavLink to={link.to} className="nav-hover-btn block">
+                    {link.name}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+            <button className="rounded-md border border-[#191a23] px-4 py-2 text-xl transition duration-300 hover:border-[#b9ff66] hover:bg-[#b9ff66] hover:text-white">
               Request a quote
             </button>
-          </ul>
+          </div>
         </div>
       </nav>
       {/* Mobile */}

@@ -67,8 +67,8 @@ function Testimonial() {
                 {content.quote}
               </p>
               <div className="ml-8 mt-6">
-                <h4 className="font-medium text-[#b9ff66]">{content.name}</h4>
-                <h4>{content.position}</h4>
+                <p className="font-medium text-[#b9ff66]">{content.name}</p>
+                <p>{content.position}</p>
               </div>
             </SwiperSlide>
           ))}
