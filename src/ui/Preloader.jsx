@@ -51,7 +51,7 @@ function Preloader() {
           <p
             ref={textRef}
             id="text"
-            className="text-[12vw] font-extrabold uppercase tracking-wide text-[#191a1b] lg:text-[7vw]"
+            className="text-[10vw] font-extrabold uppercase tracking-wide text-[#191a1b] lg:text-[7vw]"
           >
             Positivus
           </p>

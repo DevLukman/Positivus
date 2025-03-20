@@ -13,12 +13,16 @@ function Contact() {
         <form className="flex w-[100%] flex-col lg:w-[50%]">
           <div className="flex items-center gap-8">
             <div className="flex gap-2">
-              <input type="radio" className="accent-[#b9ff66]" />
-              <label className="text-lg font-normal">Say Hi</label>
+              <input type="radio" className="accent-[#b9ff66]" id="sayHi" />
+              <label className="text-lg font-normal" htmlFor="sayHi">
+                Say Hi
+              </label>
             </div>
             <div className="flex gap-2">
-              <input type="radio" className="accent-[#b9ff66]" />
-              <label className="text-lg font-normal">Get a Quote</label>
+              <input type="radio" className="accent-[#b9ff66]" id="getAQuote" />
+              <label className="text-lg font-normal" htmlFor="getAQuote">
+                Get a Quote
+              </label>
             </div>
           </div>
           <div className="mt-[20px] flex flex-col gap-4">

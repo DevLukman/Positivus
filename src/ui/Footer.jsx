@@ -27,7 +27,7 @@ function Footer() {
             <div>
               <input
                 placeholder="Email"
-                className="rounded-[10px] border border-[#f3f3f3] bg-transparent px-6 py-3"
+                className="rounded-[10px] border border-[#f3f3f3] bg-transparent px-6 py-3 text-[#fff]"
               />
             </div>
             <button className="w-full rounded-[10px] bg-[#b9ff66] px-6 py-3 text-xs font-medium">

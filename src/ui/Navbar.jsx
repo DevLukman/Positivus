@@ -77,6 +77,7 @@ function Navbar() {
           </h1>
           <div
             role="button"
+            aria-label="menu"
             className="cursor-pointer"
             onClick={() => setIsOpen(true)}
           >

@@ -10,7 +10,7 @@ const links = [
 function FooterNav() {
   return (
     <nav className="flex flex-col items-center justify-between py-8 lg:flex-row">
-      <h6>
+      <h1>
         <Link to="/" className="flex items-center gap-2">
           <img
             src="/images/logo-2.svg"
@@ -21,7 +21,7 @@ function FooterNav() {
           />
           <span className="text-xl font-medium text-[#fff]">Positivus</span>
         </Link>
-      </h6>
+      </h1>
       <ul className="relative mt-[30px] flex flex-col items-center gap-4 text-xl lg:flex-row">
         {links.map((link, index) => (
           <li key={index}>
