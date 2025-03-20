@@ -56,7 +56,7 @@ function Preloader() {
       </div>
       <div
         id="container"
-        className="mask-clip-path fixed inset-0 z-40 h-full w-full bg-[#b9ff66]"
+        className="mask-clip-path fixed inset-0 z-40 hidden h-full w-full bg-[#b9ff66] lg:block"
       ></div>
     </>
   );
