@@ -68,9 +68,11 @@ function Navbar() {
           <h1>
             <Link to="/" className="flex gap-2 text-2xl font-medium text-black">
               <img
-                src="/images/logo.png"
+                src="/images/logo.svg"
                 alt="logo"
                 className="h-[28px] w-[28px]"
+                width="100%"
+                height="100%"
               />
               <span>Positivus</span>
             </Link>

@@ -1,14 +1,9 @@
-import { splitTextIntoChars } from "../utils/helper";
+const loaderChars = ["p", "o", "s", "i", "t", "i", "v", "u", "s"];
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useRef } from "react";
 
 function Preloader() {
-  const textRef = useRef(null);
-
   useGSAP(function () {
-    if (!textRef.current) return;
-    const chars = splitTextIntoChars(textRef.current);
     const tl = gsap.timeline({
       onStart: () => {
         document.body.classList.add("overflow-hidden");
@@ -18,13 +13,13 @@ function Preloader() {
         gsap.set("#container", { display: "none" });
       },
     });
-    tl.from(chars, {
+    tl.from("#char", {
       y: 200,
       ease: "power4.inOut",
       duration: 1,
       stagger: 0.1,
     });
-    tl.to(chars, {
+    tl.to("#char", {
       y: -120,
       ease: "power4.inOut",
       duration: 0.7,
@@ -48,13 +43,15 @@ function Preloader() {
         className="mask-clip-path fixed inset-0 z-50 h-full w-full bg-[#f3f3f3]"
       >
         <div className="mask-clip-path absolute left-[50%] top-[50%] flex -translate-x-[50%] -translate-y-[50%] items-center justify-center">
-          <p
-            ref={textRef}
-            id="text"
-            className="text-[10vw] font-extrabold uppercase tracking-wide text-[#191a1b] lg:text-[7vw]"
-          >
-            Positivus
-          </p>
+          {loaderChars.map((char, index) => (
+            <span
+              id="char"
+              key={index}
+              className="inline-block text-[10vw] font-extrabold uppercase tracking-wide text-[#191a1b] lg:text-[7vw]"
+            >
+              {char}
+            </span>
+          ))}
         </div>
       </div>
       <div
